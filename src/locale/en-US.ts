@@ -5,7 +5,7 @@ extendLocale('en-US', {
     'Amis is a low code front-end framework that uses JSON configuration to generate pages, which can reduce page development workload and greatly improve efficiency.',
   '52dfce669769762026d17a75a55a1577': 'aisuda · Low code platform',
   'b05c95f75e82f460c79f127094388f20': 'review',
-  '742e6a42d39a711535da712320e90b90': 'React component',
+  '742e6a42d39a711535da712320e90b90': '',
   '687fbf4d0a505403a102f105b4a8eff3': 'Information display card',
   'f1d4ff50f3828f9b73412e7d94e6dd6e': 'custom',
   '224e2ccda861c2514faa683b3683c361': 'configure',

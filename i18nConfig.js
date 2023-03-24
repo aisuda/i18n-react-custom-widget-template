@@ -32,8 +32,8 @@ module.exports = {
   },
   // 机器自动翻译：需要配置对应的appId、key
   translate: {
-    appId: '',
-    key: '',
+    appId: '20230324001613652', // 请在百度翻译开发平台申请：http://api.fanyi.baidu.com/manage/developer
+    key: 'Sprp7Mz8_yydeyhYrgE0', // 个人翻译资源权限，请勿频繁使用
     host: 'http://api.fanyi.baidu.com'
   }
 };
