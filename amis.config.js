@@ -47,6 +47,7 @@ module.exports = {
       {
         test: /.*(ts|tsx|js|jsx)$/,
         loader: 'webpack-react-i18n',
+        enforce: 'post', // 后置
         options: i18nConfig
       }
     ],
