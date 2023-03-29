@@ -16,7 +16,7 @@
     "preview": "amis preview",
     "linkDebug": "amis linkDebug",
     "i18n:update": "npx i18n update --config=./i18nConfig.js",
-    "i18n:translate": "npx i18n translate --config=./i18nConfig.js --l=en-US",
+    "i18n:translate": "npx i18n translate --config=./i18nConfig.js --l=en-US,ru-RU",
     "build2lib": "amis build2lib",
     "format": "prettier --write \"src/**/**/*.{js,jsx,ts,tsx,vue,scss,json}\""
   },
@@ -76,7 +76,7 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.9",
     "prettier": "^2.0.5",
-    "i18n-command": "^0.0.23-beta.8",
+    "i18n-command": "^0.0.23-beta.11",
     "webpack-react-i18n": "^0.0.23-beta.8"
   },
   "engines": {

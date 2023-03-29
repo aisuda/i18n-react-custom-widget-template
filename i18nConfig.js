@@ -23,6 +23,10 @@ module.exports = {
     {
       name: 'zh-CN',
       path: './src/locale'
+    },
+    {
+      name: 'ru-RU',
+      path: './src/locale'
     }
   ],
   output: {
