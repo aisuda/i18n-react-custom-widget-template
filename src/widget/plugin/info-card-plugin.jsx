@@ -1,7 +1,7 @@
 /**
  * @file 编辑器扩展, 增加自定义组件
  */
-import { registerAmisEditorPlugin } from 'amis-widget';
+import { registerAmisEditorPlugin, getSchemaTpl } from 'amis-widget';
 import '../../locale/index';
 
 export class InfoCardPlugin {
@@ -23,34 +23,32 @@ export class InfoCardPlugin {
 
   panelTitle = '配置';
 
-  panelControls = [
-    {
-      type: 'textarea',
-      name: 'title',
-      label: '卡片title',
-      value:
-        'amis 是一个低代码前端框架，它使用 JSON 配置来生成页面，可以减少页面开发工作量，极大提升效率。',
-    },
-    {
-      type: 'text',
-      name: 'backgroundImage',
-      label: '展示图片',
-      value:
-        'https://search-operate.cdn.bcebos.com/64c279f23794a831f9a8e7a4e0b722dd.jpg',
-    },
-    {
-      type: 'input-number',
-      name: 'img_count',
-      label: '图片数量',
-      value: 3,
-    },
-    {
-      type: 'input-number',
-      name: 'comment_count',
-      label: '评论数',
-      value: 2021,
-    },
-  ];
+  panelBodyCreator = (context) => {
+    return [
+      getSchemaTpl('description', {
+        name: 'title',
+        label: '卡片title',
+        value:
+          'amis 是一个低代码前端框架，它使用 JSON 配置来生成页面，可以减少页面开发工作量，极大提升效率。',
+      }),
+      getSchemaTpl('label', {
+        name: 'backgroundImage',
+        label: '展示图片',
+        value:
+          'https://search-operate.cdn.bcebos.com/64c279f23794a831f9a8e7a4e0b722dd.jpg',
+      }),
+      getSchemaTpl('maximum', {
+        name: 'img_count',
+        label: '图片数量',
+        value: 3,
+      }),
+      getSchemaTpl('maximum', {
+        name: 'comment_count',
+        label: '评论数',
+        value: 2021,
+      }),
+    ];
+  };
 }
 
 registerAmisEditorPlugin(InfoCardPlugin);
