@@ -38,6 +38,7 @@ module.exports = {
   // 机器自动翻译：需要配置对应的appId、key
   translate: {
     qps: 10,
+    saveLanguages: true, // 是否将翻译后的所有语料数据存储到本地json文件
     appId: '20230324001613652', // 请在百度翻译开发平台申请：http://api.fanyi.baidu.com/manage/developer
     key: 'Sprp7Mz8_yydeyhYrgE0', // 个人翻译资源权限，请勿频繁使用
     host: 'http://api.fanyi.baidu.com'
