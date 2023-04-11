@@ -15,7 +15,7 @@
     "dev": "amis dev",
     "preview": "amis preview",
     "linkDebug": "amis linkDebug",
-    "i18n:update": "npx i18n update --config=./i18nConfig.js",
+    "i18n:update": "npx i18n update --config=./i18nConfig.js --secretKey=custom-amis-widgets",
     "i18n:translate": "npx i18n translate --config=./i18nConfig.js --l=en-US,ru-RU",
     "build2lib": "amis build2lib",
     "format": "prettier --write \"src/**/**/*.{js,jsx,ts,tsx,vue,scss,json}\""

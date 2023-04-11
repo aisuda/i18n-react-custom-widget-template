@@ -26,6 +26,7 @@ export class InfoCardPlugin {
   panelBodyCreator = (context) => {
     return [
       getSchemaTpl('description', {
+        i18n: true,
         name: 'title',
         label: '卡片title',
         value:

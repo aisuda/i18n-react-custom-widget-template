@@ -1,7 +1,0 @@
-/*!
- * i18n-react-custom-widget-template v1.0.2
- * author: wibetter
- * build tool: AKFun
- * build time: Thu Mar 30 2023 18:11:46 GMT+0800 (China Standard Time)
- * build tool info: https://github.com/wibetter/akfun
- */
