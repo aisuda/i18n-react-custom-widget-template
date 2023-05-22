@@ -76,7 +76,7 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.9",
     "prettier": "^2.0.5",
-    "i18n-command": "^0.0.23-beta.11",
+    "i18n-command": "^0.0.23-beta.17",
     "webpack-react-i18n": "^0.0.23-beta.8"
   },
   "engines": {
