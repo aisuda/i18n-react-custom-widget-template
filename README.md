@@ -1,15 +1,18 @@
 # i18n-react-custom-widget-template
 > 国际化版amis自定义组件模板（react技术栈）
+备注：[NPM扩展包开发端支持国际化](https://github.com/aisuda/amis-widget-cli/wiki/NPM%E6%89%A9%E5%B1%95%E5%8C%85%E5%BC%80%E5%8F%91%E7%AB%AF%E5%A6%82%E4%BD%95%E6%94%AF%E6%8C%81%E5%9B%BD%E9%99%85%E5%8C%96)。
 
 ### 目录说明
 - src: 自定义组件源码；
 - src/assets: 存放组件静态资源，比如 css、img等；
+- src/locale: 存放当前国际化语料数据；
 - src/widget: 组件源码；
 - src/widget/info-card.jsx: 自定义组件代码；
 - src/index.js: 用于注册一个amis渲染器，注册成功后编辑器画布区中才会正常展示自定义组件内容；
 - src/widget/plugin/info-card-plugin.jsx: 用于注册一个amis-editor插件，注册成功后编辑器左侧组件面板中会展示；
 - src/preview.js: 用于本地预览自定义组件内容；
-- amis.config.js: amis-widget-cli配置文件。
+- amis.config.js: amis-widget-cli配置文件，当前项目webpack配置统一在这里设置；
+- i18nConfig.js: 国际化配置文件，比如 百度翻译账户需在这里配置；
 
 ### 开发说明
 
