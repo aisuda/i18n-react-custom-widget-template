@@ -5,6 +5,7 @@ export default class InfoCard extends React.PureComponent {
   constructor() {
     super();
     this.agreeDataFormat = this.agreeDataFormat.bind(this);
+    this.jumpToAisuda = this.jumpToAisuda.bind(this);
   }
   agreeDataFormat(agreeData) {
     if (agreeData && agreeData <= 9999) {
@@ -13,6 +14,9 @@ export default class InfoCard extends React.PureComponent {
     if (agreeData && agreeData > 9999) {
       return `${Math.floor(agreeData / 1000) / 10}w`;
     }
+  }
+  jumpToAisuda() {
+    this.props.env.jumpTo('https://aisuda.bce.baidu.com/');
   }
   render() {
     const { title, backgroundImage, img_count, comment_count } = this.props;
@@ -33,7 +37,9 @@ export default class InfoCard extends React.PureComponent {
           {img_count > 0 && <div className="img-count">{img_count}</div>}
         </div>
         <div className="news-info">
-          <div className="left media-mark">爱速搭 · 低代码平台</div>
+          <div className="left media-mark" onClick={this.jumpToAisuda}>
+            爱速搭 · 低代码平台
+          </div>
           {comment_count && comment_count > 0 && (
             <div className="cmt-num right">
               {this.agreeDataFormat(comment_count)}评
